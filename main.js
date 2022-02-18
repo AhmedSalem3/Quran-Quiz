@@ -53,14 +53,14 @@ function beginQuiz(questions) {
       // pushing correct answers to show them at the end
 
       correctAnswersArr.push({
-        question: displayedQuestion.answer,
+        question: displayedQuestion.question,
         answer: correctAnswer,
         submitted: chosenAnswer,
       });
     } else {
       // pushing wrong answers to show them at the end
       wrongAnswersArr.push({
-        question: displayedQuestion.asnwer,
+        question: displayedQuestion.question,
         answer: correctAnswer,
         submitted: chosenAnswer,
       });

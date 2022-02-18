@@ -207,7 +207,6 @@ select {
 }
 
 .results {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,7 +218,7 @@ select {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 .results.show-results {
   display: flex;
@@ -228,6 +227,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 95%;
 }
 .results p {
   color: #000;
@@ -239,6 +239,7 @@ select {
   gap: 10px;
 }
 .results .answer {
+  width: 100%;
   display: flex;
   gap: 26px;
   font-size: 15px;
@@ -249,8 +250,16 @@ select {
   align-items: center;
   justify-content: space-between;
 }
+.answer > * {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
 .results .answer .correct {
   color: #cddc39;
+}
+.question-title {
+  flex: 5;
 }
 .results .answer .submitted {
   color: #eee;
